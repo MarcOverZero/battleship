@@ -16,7 +16,7 @@ class Battleship
 
   def welcome
     "Welcome to BATTLESHIP\n\nWould you like to (p)lay, read the (i)nstructions, or (q)uit?"
-    @user_input = gets
+    @user_input = gets.downcase.chomp
     welcome_parse(@user_input)
   end
 
@@ -44,7 +44,7 @@ class Battleship
     blank_board.display
 
     puts "\nWould you like to (p)lay, read the (i)nstructions, or (q)uit?"
-    @user_input = gets
+    @user_input = gets.downcase.chomp
     welcome_parse(@user_input)
   end
 
