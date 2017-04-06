@@ -1,11 +1,11 @@
 
 module ShipDeployer
 
-  def check_input_length(coordinates)
-    if coordinates.length == 5?
-      true
-    end
-  end
+  # def check_input_length(coordinates)
+  #   if coordinates.length == 5?
+  #     true
+  #   end
+  # end
 
   def check_input_formatting(coordinates)
     if coordinates[2] == " "
@@ -53,6 +53,7 @@ module ShipDeployer
     else
       true
 
+    end
     # if available == false, "one or more of those squares is occuppied" print board
     #else assign coordinate values
   end

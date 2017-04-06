@@ -4,7 +4,7 @@ require './lib/ship_deployer'
 # require './lib/messages'
 
 class Battleship
-  include ShipDeployer
+  extend ShipDeployer
   # include Messages
   attr_accessor :blank_board, :computer_board_state, :user_board_state, :user_shots_state
   def initialize
